@@ -29,3 +29,20 @@ const condicionNum = (num1, num2, bandera) => {
 // Ejecución de la funcion - Éxito✅
 condicionNum(20, 3, false);
 
+// Ejercicios Propuestos de toda la Clase 😁🐣
+
+// Ejercicio 1😀
+const SUMA = (num1, num2) =>{
+    console.log(num1+num2);
+}
+
+// Ejecución de la funcion - Éxito✅
+SUMA(1,2);
+
+// Ejercicio 2😁
+const tamañoCadena = (palabra) =>{
+    console.log(palabra.length);
+}
+
+// Ejecución de la funcion - Éxito✅
+tamañoCadena('Hola Mundo');
