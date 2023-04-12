@@ -25,9 +25,9 @@ const tamañoCadena = (palabra) => console.log(palabra.length);
 // Ejecución de la funcion - Éxito✅
 tamañoCadena('Hola Mundo');
 
-// Ejercicio 3
+// Ejercicio 3 😄
 //Declaramos el Arreglo
-let array = [10,20,30];
+let array = [ 10 , 20, 30];
 const sumaArreglos = (array) =>{
     let total = array.reduce((valorAnterior, valorActual) => valorAnterior + valorActual );
     console.log(total);
@@ -35,3 +35,18 @@ const sumaArreglos = (array) =>{
 
 // Ejecución de la funcion - Éxito✅
 sumaArreglos(array);
+
+// Ejercicio 4 😅
+const palabraInversa = (palabra) => console.log(palabra.split("").reverse().join(""));
+
+// Ejecución de la funcion - Éxito✅
+palabraInversa('roma');
+
+// Ejercicio 5 😆
+// Declaramos un arreglo
+const ensalada = ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
+
+const devolverPrimero = (array) => console.log(array[0]);
+
+// Ejecución de la funcion - Éxito✅
+devolverPrimero(ensalada);
