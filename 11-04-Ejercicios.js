@@ -50,3 +50,9 @@ const devolverPrimero = (array) => console.log(array[0]);
 
 // Ejecución de la funcion - Éxito✅
 devolverPrimero(ensalada);
+
+// Ejercicio 6 🤨
+const numeroParImpar = (num) => num % 2 === 0 ? console.log(true) : console.log(false);
+
+// Ejecución de la funcion - Éxito✅
+numeroParImpar(3);
