@@ -1,38 +1,22 @@
-
+// Ejercicios asignados a mi Persona.
 // Ejercicio 10
-const numConfirmacion= (num) => {
-    /*Tammbien puedo enviar la respuesta atraves de un return, que me retorne
-    lo establecido en el ejercicio*/ 
-    if(num >= 0){
-        //return true;
-        console.log('true');
-    }
-    else{
-        //return false;
-        console.log('false');
-    }
-}
+const numeroConfirmacion = (num) => num > 0 ? console.log('true') : console.log('false');   
 
 // Ejecución de la funcion - Éxito✅
-numConfirmacion(2);
+numeroConfirmacion(6);
 
 // Ejercicio 29
-const condicionNum = (num1, num2, bandera) => {
-    if(bandera==true){
-        console.log(Math.pow(num1, num2));
-    }
-    else{
-        console.log(Math.sqrt(num1));
-    }
-}
+const condicionNumeros = (num1, num2, bandera) => bandera === true ? console.log(Math.pow(num1, num2)) : console.log(Math.sqrt(num1));
 
 // Ejecución de la funcion - Éxito✅
-condicionNum(20, 3, false);
+condicionNumeros(3, 3, false);
 
+
+/*------------------------------------------------------------------------------------------------*/
 // Ejercicios Propuestos de toda la Clase 😁🐣
 
 // Ejercicio 1😀
-const SUMA = (num1, num2) =>{
+const sumaNumeros = (num1, num2) =>{
     console.log(num1+num2);
 }
 
@@ -46,3 +30,17 @@ const tamañoCadena = (palabra) =>{
 
 // Ejecución de la funcion - Éxito✅
 tamañoCadena('Hola Mundo');
+
+// Ejercicio 3
+const sumaArreglos = (array) =>{
+    let element = 0;
+    for (let i = 0; i < array.length; i++) {
+        element += array[i];
+    }
+    console.log(element);
+}
+
+//Declaramos el Arreglo
+let array = [10,20,30];
+// Ejecución de la funcion - Éxito✅
+sumaArreglos(array);
