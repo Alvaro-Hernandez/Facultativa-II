@@ -56,3 +56,9 @@ const numeroParImpar = (num) => num % 2 === 0 ? console.log(true) : console.log(
 
 // Ejecución de la funcion - Éxito✅
 numeroParImpar(3);
+
+// Ejercicio 7 😑
+const numeroMayor = (num1, num2) => num1 > num2 ? console.log(num1) : console.log(num2);
+
+// Ejecucion de la funcion -Exito✅
+numeroMayor(1,2);
