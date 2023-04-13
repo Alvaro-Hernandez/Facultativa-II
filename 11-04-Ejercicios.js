@@ -1,5 +1,5 @@
 // Ejercicios asignados a mi Persona.
-// Ejercicio 10
+// Ejercicio 10😶‍🌫️
 const numeroConfirmacion = (num) => num > 0 ? console.log(true) : console.log(false);   
 
 // Ejecución de la funcion - Éxito✅
@@ -62,3 +62,48 @@ const numeroMayor = (num1, num2) => num1 > num2 ? console.log(num1) : console.lo
 
 // Ejecucion de la funcion -Exito✅
 numeroMayor(1,2);
+
+// Ejercicio 8 😶
+const esPalindromo = (cadena) => console.log(cadena.split('').reverse().join('') === cadena);
+
+// Ejecucion de la funcion -Exito✅
+esPalindromo('1001');
+
+// Ejercicio 9 🫥
+// Declaramos el arreglo 
+const foodEmojis = ["🍔", "🍟", "🌭", "🍕", "🌮", "🍣", "🍱", "🥪", "🥞", "🍗"];
+
+const elementoArreglo = (array) => console.log(array.length);
+
+// Ejecucion de la funcion -Exito✅
+elementoArreglo(foodEmojis);
+
+// Ejercicio 11 🙄
+const unirCadenas = (cadena1, cadena2) => console.log(cadena1+cadena2);
+
+// Ejecucion de la funcion -Exito✅
+unirCadenas("Hola,", " Mundo");
+
+// Ejercicio 12 😏
+// Declaramos un arreglo
+const animalEmojis = ["🐶", "🐱", "🐰", "🐻", "🐨", "🐼", "🐯", "🦁", "🐮", "🐷"];
+
+const ultimoElemento = (array) => {
+    let posicionAuxi = array.length - 1;
+    console.log(array[posicionAuxi]);
+}
+// Ejecucion de la funcion -Exito✅
+ultimoElemento(animalEmojis);
+
+// Ejercicio 13 😣
+const buscarA = (cadena) => {
+    cadena.includes('a') || cadena.includes('A')  ? console.log(true) : console.log(false);
+}
+
+// Ejecucion de la funcion -Exito✅
+ruddy('Holo');
+// Retorna false
+ruddy('HAlo');
+// Retorna true
+ruddy('Halo');
+// Retorna true
