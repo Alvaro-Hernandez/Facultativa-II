@@ -1,15 +1,15 @@
 // Ejercicios asignados a mi Persona.
 // Ejercicio 10😶‍🌫️
-const numeroConfirmacion = (num) => num > 0 ? console.log(true) : console.log(false);   
+const numeroConfirmacion = (num) => num >= 0 ? true : false;   
 
 // Ejecución de la funcion - Éxito✅
-numeroConfirmacion(6);
+console.log(numeroConfirmacion(6)); 
 
 // Ejercicio 29
-const condicionNumeros = (num1, num2, bandera) => bandera === true ? console.log( Math.pow(num1, num2) ) : console.log( Math.sqrt(num1) );
+const condicionNumeros = (num1, num2, bandera) => bandera === true ? Math.pow(num1, num2) : Math.sqrt(num1);
 
 // Ejecución de la funcion - Éxito✅
-condicionNumeros(3, 3, false);
+console.log(condicionNumeros(3, 3, false)); 
 
 
 /*------------------------------------------------------------------------------------------------*/
