@@ -184,3 +184,13 @@ const ultimoElemento2 = (array) => {
 
 // Ejecucion de la funcion - Exito✅
 console.log(ultimoElemento2(weatherEmojis)); 
+
+// Ejercicio 22 😌
+const numeroExponente = (num) => num < 0 ? Math.pow(num, 3) : Math.pow(num, 2);
+
+// Ejecucion de la funcino - Exito✅
+console.log(numeroExponente(-3));
+// Retorna -27
+console.log(numeroExponente(2));
+// Retorna 4
+
