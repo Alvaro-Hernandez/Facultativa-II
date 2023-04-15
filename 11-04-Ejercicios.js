@@ -60,13 +60,13 @@ console.log(numeroParImpar(3));
 // Ejercicio 7 😑
 const numeroMayor = (num1, num2) => num1 > num2 ? num1 : num2;
 
-// Ejecucion de la funcion -Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(numeroMayor(1,2));
 
 // Ejercicio 8 😶
 const esPalindromo = (cadena) => cadena.split('').reverse().join('') === cadena;
 
-// Ejecucion de la funcion -Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(esPalindromo('1001'));
 
 // Ejercicio 9 🫥
@@ -75,13 +75,13 @@ const foodEmojis = ["🍔", "🍟", "🌭", "🍕", "🌮", "🍣", "🍱", "�
 
 const elementoArreglo = (array) => array.length;
 
-// Ejecucion de la funcion -Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(elementoArreglo(foodEmojis));
 
 // Ejercicio 11 🙄
 const unirCadenas = (cadena1, cadena2) => cadena1 + cadena2;
 
-// Ejecucion de la funcion -Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(unirCadenas("Hola,", " Mundo"));
 
 // Ejercicio 12 😏
@@ -92,18 +92,80 @@ const ultimoElemento = (array) => {
     let posicionAuxi = array.length - 1;
     return array[posicionAuxi];
 }
-// Ejecucion de la funcion -Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(ultimoElemento(animalEmojis)); 
 
 // Ejercicio 13 😣
 const buscarA = (cadena) => {
-     return cadena.includes('a') || cadena.includes('A')  ? true : false;
+    return cadena.includes('a') || cadena.includes('A')  ? true : false;
 }
 
-// Ejecucion de la funcion -Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(buscarA('Holo')); 
 // Retorna false
 console.log(buscarA('HAlo')); 
 // Retorna true
 console.log(buscarA('Halo')); 
 // Retorna true
+
+// Ejercicio 14 😥
+const anagrama = (cadena1, cadena2) => {
+    let cadenaOrdenada1 = cadena1.split('').sort().join('');
+    let cadenaOrdenada2 = cadena2.split('').sort().join('');
+    return cadenaOrdenada1 === cadenaOrdenada2;
+}
+
+// Ejecucion de la funcion - Exito✅
+console.log(anagrama('dcba', 'abcd'));
+
+// Ejercicio 15 😮
+let arrayNumero = [ 2 , 3, 5];
+const sumaEnArreglo = (array) => array.map(n => n + n);
+
+// Ejecucion de la funcion - Exito✅
+console.log(sumaEnArreglo(arrayNumero));
+// Retorna [ 4, 6, 10 ]
+
+// Ejercicio 16 🤐
+const numeroMenor = (num1, num2) => num1 < num2 ? num1 : num2;
+
+// Ejecucion de la funcion - Exito✅
+console.log(numeroMenor(1,2));
+// Retorna 1
+console.log(numeroMenor(2,3));
+// Retorna 2
+
+// Ejercicio 17 😯
+const upperCaseCadena = (cadena) => cadena.toUpperCase();
+
+// Ejecucion de la funcion - Exito✅
+console.log(upperCaseCadena('Meylin'));
+// Retorna MEYLIN
+
+// Ejercicio 18 😪
+const lowerCaseCadena = (cadena) => cadena.toLowerCase();
+
+// Ejecucion de la funcion - Exito✅
+console.log(lowerCaseCadena('ALVARO'));
+// Retorna alvaro
+
+// Ejercicio 19 😫
+const numDivisible = (num) => num % 3 == 0 && num % 5 == 0 ? true : false;
+
+// Ejecucion de la funcion - Exito✅
+console.log(numDivisible(15));
+// Retorna true
+console.log(numDivisible(10));
+// Retorna false
+
+// Ejercicio 20🥱
+// Creamos un arreglo
+const transportEmojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🚑", "🚒", "🚓", "🚚", "🚛"];
+
+const arregloInvertido = (array) => array.slice().reverse();
+
+// Ejecucion de la funcion - Exito
+console.log(arregloInvertido(transportEmojis));
+// Retorna la copia del arreglo invertido
+console.log(transportEmojis);
+// Retorna la verificacion de que el arreglo original no se mutó.
