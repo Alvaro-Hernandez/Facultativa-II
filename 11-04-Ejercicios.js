@@ -27,7 +27,7 @@ console.log(tamañoCadena('Hola Mundo'));
 
 // Ejercicio 3 😄
 //Declaramos el Arreglo
-let array = [ 10 , 20, 30];
+const array = [ 10 , 20, 30];
 const sumaArreglos = (array) =>{
     let total = array.reduce((valorAnterior, valorActual) => valorAnterior + valorActual );
     return total;
@@ -89,9 +89,10 @@ console.log(unirCadenas("Hola,", " Mundo"));
 const animalEmojis = ["🐶", "🐱", "🐰", "🐻", "🐨", "🐼", "🐯", "🦁", "🐮", "🐷"];
 
 const ultimoElemento = (array) => {
-    let posicionAuxi = array.length - 1;
-    return array[posicionAuxi];
+    let posicionFinal = array.length - 1;
+    return array[posicionFinal];
 }
+
 // Ejecucion de la funcion - Exito✅
 console.log(ultimoElemento(animalEmojis)); 
 
@@ -119,7 +120,7 @@ const anagrama = (cadena1, cadena2) => {
 console.log(anagrama('dcba', 'abcd'));
 
 // Ejercicio 15 😮
-let arrayNumero = [ 18 , 2, 5];
+const arrayNumero = [ 18 , 2, 5];
 const sumaArreglos2 = (array) =>{
     let total = array.reduce((valorAnterior, valorActual) => valorAnterior + valorActual );
     return total;
@@ -172,3 +173,14 @@ console.log(arregloInvertido(transportEmojis));
 // Retorna la copia del arreglo invertido
 console.log(transportEmojis);
 // Retorna la verificacion de que el arreglo original no se mutó.
+
+// Ejercicio 21 😴
+// Creamos el arreglo
+const weatherEmojis = ["☀️", "⛅️", "🌧️", "⛈️", "❄️", "🌪️", "🌈", "🌊", "💨", "☔️"];
+const ultimoElemento2 = (array) => {
+    let posicionFinal = array.length - 1;
+    return array[posicionFinal];
+}
+
+// Ejecucion de la funcion - Exito✅
+console.log(ultimoElemento2(weatherEmojis)); 
