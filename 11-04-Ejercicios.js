@@ -188,9 +188,22 @@ console.log(ultimoElemento2(weatherEmojis));
 // Ejercicio 22 😌
 const numeroExponente = (num) => num < 0 ? Math.pow(num, 3) : Math.pow(num, 2);
 
-// Ejecucion de la funcino - Exito✅
+// Ejecucion de la funcion - Exito✅
 console.log(numeroExponente(-3));
 // Retorna -27
 console.log(numeroExponente(2));
 // Retorna 4
 
+// Ejercicio 23
+const cadenaInversa = (cadena) => {
+    let cadenaInverted = '';
+
+    for (let i = cadena.length - 1; i >= 0; i--) {
+        cadenaInverted += cadena[i]
+    }
+
+    return cadenaInverted;
+}
+
+// Ejecucion de la funcion - Exito✅
+console.log(cadenaInversa('Hola Mundo'));
