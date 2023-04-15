@@ -119,12 +119,15 @@ const anagrama = (cadena1, cadena2) => {
 console.log(anagrama('dcba', 'abcd'));
 
 // Ejercicio 15 😮
-let arrayNumero = [ 2 , 3, 5];
-const sumaEnArreglo = (array) => array.map(n => n + n);
+let arrayNumero = [ 18 , 2, 5];
+const sumaArreglos2 = (array) =>{
+    let total = array.reduce((valorAnterior, valorActual) => valorAnterior + valorActual );
+    return total;
+}
 
 // Ejecucion de la funcion - Exito✅
-console.log(sumaEnArreglo(arrayNumero));
-// Retorna [ 4, 6, 10 ]
+console.log(sumaArreglos2(arrayNumero));
+// Retorna 25
 
 // Ejercicio 16 🤐
 const numeroMenor = (num1, num2) => num1 < num2 ? num1 : num2;
